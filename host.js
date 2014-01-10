@@ -29,6 +29,10 @@
     return transformStringOnHash(location.search);
   }
 
+  host.reloadPage = function () {
+    location.reload(true);
+  }
+
   var transformStringOnHash = function (search) {
     var searchObject  = {};
 
