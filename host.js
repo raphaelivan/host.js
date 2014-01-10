@@ -13,8 +13,12 @@
     return protocol ? (location.protocol = protocol) : location.protocol;
   }
 
-  host.reloadPage = function () {
-    location.reload(true);
+  host.hash = function (hash) {
+    return hash ? location.hash = hash : location.hash;
+  }
+
+  host.addHash = function (hash) {
+    location.hash += "#" + hash;
   }
 
   //
