@@ -21,12 +21,12 @@
     location.hash += "#" + hash;
   }
 
-  host.search = function  (search) {
-    if (search) {
-      return location.search = transformHashOnString(search);
+  host.params = function  (params) {
+    if (params) {
+      return location.search = transformHashOnString(params);
     };
 
-    return transformStringOnHash(location.search);
+    return location.search ? transformStringOnHash(location.search) : null;
   }
 
   host.reloadPage = function () {
