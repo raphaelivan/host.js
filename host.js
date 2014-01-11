@@ -5,8 +5,8 @@
     host = {}
   , location = window.location || document.location;
 
-  host.location = function (loca) {
-    return loca ? location.assign(loca) : location.href;
+  host.url = function (url) {
+    return url ? location.assign(url) : location.href;
   }
 
   host.protocol = function (protocol) {
@@ -42,6 +42,7 @@
           searchObject[aKeys[0]] = aKeys[1];
       };
     };
+
     return searchObject;
   }
 
