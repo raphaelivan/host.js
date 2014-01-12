@@ -33,16 +33,21 @@
     location.reload(true);
   }
 
+  host.options = function () {
+    for (var key in this) {
+      console.log(typeof this[key] === 'function' ? key+ '()' : key);
+    };
+  }
+
   var transformStringOnHash = function (search) {
     var searchObject  = {};
 
     if (search.length > 1) {
       for (var nkey = 0,  keys = search.substr(1).split("&"); nkey < keys.length; nkey++) {
         var aKeys = keys[nkey].split("=");
-          searchObject[aKeys[0]] = aKeys[1];
+        searchObject[aKeys[0]] = aKeys[1];
       };
     };
-
     return searchObject;
   }
 
@@ -50,7 +55,7 @@
     var searchString = '';
 
     for (var k in search) {
-      searchString +=  (searchString.length > 1 ? '&' : '') + k + "=" + search[k];
+      searchString +=  (searchString.length > 1 ? '&' : '') + k + '=' + search[k];
     }
     return searchString;
   }
