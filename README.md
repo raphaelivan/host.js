@@ -42,6 +42,28 @@ or set the protocol
  $host.protocol("https");
 ```
 
+## $host.params()
+  Get the parameters passed
+
+```js
+ $host.params();
+ /* http://example.com?foo=foo&bar='bar' */
+```
+
+Will return a object like this:
+
+```js
+ { foo: 'foo', bar: 'bar' }
+```
+
+or set the params
+
+```js
+ $host.params({ name: 'John' });
+ /* http://example.com?name=John */
+```
+
+
 ## $host.options()
 Shows the options
 ```js
