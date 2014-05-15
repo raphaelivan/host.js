@@ -63,6 +63,12 @@ or set the params
  /* http://example.com?name=John */
 ```
 
+## $host.reloadPage()
+  Reload the page
+
+```js
+  $host.reload();
+```
 
 ## $host.options()
 Shows the options
