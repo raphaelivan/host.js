@@ -70,6 +70,29 @@ or set the params
   $host.reload();
 ```
 
+## $host.hash(<hash>)
+  Get the URL hash
+
+```js
+ $host.hash();
+ /* http://example.com#foo*/
+```
+
+Will return a string like this:
+
+```js
+  "#foo"
+```
+
+or set the hash
+
+```js
+  $host.hash("#bar");
+  /* http://example.com#bar*/
+```
+
+
+
 ## $host.options()
 Shows the options
 ```js
