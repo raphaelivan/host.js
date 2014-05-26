@@ -39,6 +39,10 @@
     };
   }
 
+  host.replace = function (file) {
+    window.location.replace(file);
+  }
+
   var transformStringOnHash = function (search) {
     var searchObject  = {};
 
