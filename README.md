@@ -3,14 +3,13 @@ Get some information about the host.
 
 ## Install
 
+```sh
+ bower install host.js
+```
 
 ## $host
   Host.js exposes an object called $host that contains some methods.
   You can see the methods available through  the options method.
-
-```js
- $host.options();
-```
 
 ## $host.url(<path>)
   Assuming that we are in www.example.com

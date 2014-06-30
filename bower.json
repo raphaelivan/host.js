@@ -1,0 +1,15 @@
+{
+  "name": "host.js",
+  "main": "host.js",
+  "version": "0.1.0",
+  "homepage": "https://github.com/raphaelivan/host.js",
+  "authors": [
+    "Raphael Ivan <raphaivan@gmail.com>"
+  ],
+  "description": "Get some information about the host and URL",
+  "keywords": [
+    "host",
+    "url"
+  ],
+  "license": "MIT"
+}
